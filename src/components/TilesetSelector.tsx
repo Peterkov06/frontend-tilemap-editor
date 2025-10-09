@@ -1,12 +1,17 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { TilesetContext } from "../context/TilesetContext"
 
 const TilesetSelector = () => {
-  const {jsonData} = useContext(TilesetContext)
+  const {jsonData, changeTileset} = useContext(TilesetContext)
+  
+  useEffect(()=>{
+    if(jsonData.length > 0)
+        changeTileset(0)
+  },[jsonData])
 
   return (
-    <select>
-        {jsonData.map(tileset => <option>{tileset.name}</option>)}
+    <select onChange={(e) => {changeTileset(Number(e.target.value))}}>
+        {jsonData.map((tileset, idx) => <option value={idx}>{tileset.name}</option>)}
     </select>
   )
 }

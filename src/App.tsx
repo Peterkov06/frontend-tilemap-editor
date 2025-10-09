@@ -1,3 +1,4 @@
+import Palette from "./components/Palette"
 import TilesetSelector from "./components/TilesetSelector"
 import { TilesetProvider } from "./context/TilesetContext"
 
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <TilesetProvider>
         <TilesetSelector/>
+        <Palette/>
       </TilesetProvider>
     </div>
   )
