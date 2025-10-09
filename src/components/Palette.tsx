@@ -15,8 +15,13 @@ const Palette = () => {
     <div className="palette"
         style={{ gridTemplateColumns: `repeat(${selectedTileset ? (selectedTileset.size.x / 16) : 0}, 1fr)` }}
     >
-        {tileNumber && Array(tileNumber).fill("").map((_, idx) => 
-        <div>{idx}</div>)}
+        {tileNumber && selectedTileset && Array(tileNumber).fill("").map((_, idx) => 
+        <div
+            style={{ 
+                backgroundImage: `url(${selectedTileset.image})`,
+                backgroundSize: selectedTileset.size.x * 100 + "%"
+            }}
+        >{idx}</div>)}
     </div>
   )
 }
