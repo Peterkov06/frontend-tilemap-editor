@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Grass and Dirt",
+        "image": "/Tileset/Autotile_Grass_and_Dirt_Path_Tileset.png",
+        "size": {
+            "x": 336,
+            "y": 176
+        }
+    },
+    {
+        "name": "Nature",
+        "image": "/Tileset/Nature_Tileset.png",
+        "size": {
+            "x": 336,
+            "y": 192
+        }
+    },
+    {
+        "name": "Exterior",
+        "image": "/Tileset/Exterior_Tileset.png",
+        "size": {
+            "x": 400,
+            "y": 176
+        }
+    }
+]
