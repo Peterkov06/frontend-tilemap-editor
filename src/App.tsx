@@ -1,6 +1,13 @@
+import TilesetSelector from "./components/TilesetSelector"
+import { TilesetProvider } from "./context/TilesetContext"
+
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <TilesetProvider>
+        <TilesetSelector></TilesetSelector>
+      </TilesetProvider>
+    </div>
   )
 }
 
