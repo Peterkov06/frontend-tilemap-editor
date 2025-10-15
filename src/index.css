@@ -1,5 +1,16 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.palette{
+  display: grid;
+  max-width: 800px;
+  width: 80vw;
   margin: auto;
-  padding: auto;
+  >div{
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+  }
 }

@@ -5,7 +5,8 @@ const App = () => {
   return (
     <div>
       <TilesetProvider>
-        <TilesetSelector></TilesetSelector>
+        <TilesetSelector/>
+        <Palette/>
       </TilesetProvider>
     </div>
   )
